@@ -1,0 +1,88 @@
+body {
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  visibility: hidden;
+  max-width: 300px; /* Забезпечуємо, що зображення не буде ширше контейнера */
+  max-height: 300px; /* Встановлюємо максимальну висоту для зображення, наприклад, 200px */
+}
+
+h1 {
+  text-align: center;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.yes-container {
+  max-width: 100%;
+  flex-shrink: 0;
+}
+
+#yes,
+#no {
+  flex-shrink: 0;
+}
+
+button {
+  margin: 0 30px;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+#yes {
+  background-color: green;
+  z-index: 1;
+  transition: transform 0.3s ease;
+  visibility: hidden;
+}
+#yes:hover {
+  cursor: pointer;
+  background-color: rgb(1, 112, 1);
+}
+
+#no {
+  background-color: red;
+  visibility: hidden;
+}
+
+#no:hover {
+  cursor: pointer;
+  background-color: rgb(225, 2, 2);
+}
+
+#next {
+  background-color: blue;
+}
+
+#next:hover {
+  cursor: pointer;
+  background-color: rgb(50, 50, 255);
+}
+
+#inputMessage {
+  visibility: hidden;
+}
+
+button.yes {
+  transform: scale(1); /* Початковий масштаб кнопки Yes */
+}
+
+button.yes.full-screen {
+  transform: scale(2);
+}
