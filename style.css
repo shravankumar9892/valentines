@@ -68,6 +68,7 @@ button {
 
 #next {
   background-color: blue;
+  margin-top: 20px;
 }
 
 #next:hover {
