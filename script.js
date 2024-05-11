@@ -31,21 +31,25 @@ window.onload = function () {
   ];
   var currentIndex = 0;
   var talkIndex = 0;
-  inputIndexes = [4]
+  inputIndexes = [10]
   var talks = [
-    "Hi 😘",
-    "How are you doing today?",
-    "It's that time of the year...",
-    "When people confess their feelings and solidify their relationships",
+    "My love ❤️",
+    "My warrior ⚔️",
+    "My queen 👸🏻",
+    "Did you know?",
+    "It's almost 3 months... ⏱️",
+    "When you were on the clinic bed 🏥, ready to get the peeling treatment 🩺",
+    "Where we shared our feelings for the first time ❤️",
+    "And ever since",
+    "You've been my everything 🌍",
+    "After 3 months today, I'll ask you again",
     "What do you love about me the most?",
     "Lovely❤️",
-    "The thing I love about you the most?",
-    "Obviously other than your smile (I'm serious)",
-    "I love being witty and funny with you the most",
-    "The times when you called me names...",
-    "Handsome, Darling, Beautiful",
-    "I love it.",
-    "With that, I wanna ask you something..."
+    "I love all of you baby ❤️",
+    "Yes and the booty too 🍑",
+    "Before I let you go",
+    "I want to wish you...",
+    "Happy 3 months darling ❤️"    
   ]
   nextButton.addEventListener("click", function () {
     if (talkIndex < talks.length) {
@@ -68,10 +72,7 @@ window.onload = function () {
       }
       talkIndex += 1;
     } else {
-      h1.textContent = "You don't have any nicknames, how about I call you 'mine'?";
-      img.style.visibility = "visible";
-      yesButton.style.visibility = "visible";
-      noButton.style.visibility = "visible";
+      h1.textContent = "You've been a great partner 😘";
       nextButton.style.visibility = "hidden";
     }
   })
